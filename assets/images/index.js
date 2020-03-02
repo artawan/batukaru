@@ -1,0 +1,1 @@
+export { default as HomeBannerImage } from './pura_luhur_batukaru.jpg';
