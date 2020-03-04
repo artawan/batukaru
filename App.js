@@ -34,6 +34,11 @@ function App() {
           component={DetailScreen}
           options={({ route }) => ({ title: route.params.name })}
         />
+        <Stack.Screen
+          name="Pelinggih"
+          component={PelinggihScreen}
+          options={({ route }) => ({ title: route.params.name })}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

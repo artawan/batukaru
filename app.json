@@ -24,7 +24,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bitera.batukaru"
+    },
+    "android": {
+      "package": "com.bitera.batukaru",
+      "versionCode": 1
+    },
+    "description": "Buku Saku Pura Luhur Batukaru",
+    "githubUrl": "https://github.com/artawan/batukaru"
   }
 }

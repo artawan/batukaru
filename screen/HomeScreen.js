@@ -26,22 +26,7 @@ export default function HomeScreen({ navigation }) {
 			  <OptionButton
 			    image={Denah}
 			    label="Denah Pura"
-			    onPress={() => navigation.push('Details',{
-			    		content: <DenahScreen/>,
-			    		bannerImage: HomeBannerImage,
-			    		name: ' Denah Pura',
-				    })
-				}
-			  />
-			  <OptionButton
-			    image={Standar}
-			    label="Pengenalan Pelinggih"
-			    onPress={() => navigation.push('Details',{
-			    		content: <PelinggihScreen/>,
-			    		bannerImage: HomeBannerImage,
-			    		name: 'Pengenalan Pelinggih',
-				    })
-				}
+			    onPress={() => navigation.navigate('Pelinggih',{name: 'Denah Pura',})}
 			  />
 			  <OptionButton
 			    image={Standar}

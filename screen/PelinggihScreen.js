@@ -1,15 +1,22 @@
 import React from 'react';
 import { Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
 import { OptionButton } from '../components/';
 import { Standar } from '../assets/icon/';
+import { DetailScreen, SejarahScreen } from '../screen/';
 
-export default function PelinggihScreen ({ navigation }){
-	return (
+const Stack = createStackNavigator();
+
+function PelinggihOption({ navigation }){
+	return(
 		<View style={styles.navButtonContainer}>
 		  <OptionButton
 		    image= {Standar}
 		    label="Jeroan/Utama Mandala"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Jeroan/Utama Mandala',
 			    })
 			}
@@ -17,7 +24,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Jaba Tengah/Madya Mandala"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Jaba Tengah/Madya Mandala',
 			    })
 			}
@@ -25,7 +33,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Jaba Sisi/Kanistha Mandala"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Jaba Sisi/Kanistha Mandala',
 			    })
 			}
@@ -33,7 +42,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Gedong Penyimpanan Busana"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Gedong Penyimpanan Busana',
 			    })
 			}
@@ -41,7 +51,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pewaregan Suci"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pewaregan Suci',
 			    })
 			}
@@ -49,7 +60,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pura Pangubengan"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pura Pangubengan',
 			    })
 			}
@@ -57,7 +69,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pura Petangan"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pura Petangan',
 			    })
 			}
@@ -65,7 +78,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pelinggih Wana Kerthi"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pelinggih Wana Kerthi',
 			    })
 			}
@@ -73,7 +87,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pura Jero Seseh"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pura Jero Seseh',
 			    })
 			}
@@ -81,7 +96,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pura Beji Saren Kangin"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pura Beji Saren Kangin',
 			    })
 			}
@@ -89,7 +105,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pelinggih Danu"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pelinggih Danu',
 			    })
 			}
@@ -97,7 +114,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pura Jero Bangbang"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pura Jero Bangbang',
 			    })
 			}
@@ -105,7 +123,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pura Jero Pakiisan"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pura Jero Pakiisan',
 			    })
 			}
@@ -113,7 +132,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pura Dalem Kahyangan Batukaru"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pura Dalem Kahyangan Batukaru',
 			    })
 			}
@@ -121,7 +141,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pura Jero "
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pura Jero ',
 			    })
 			}
@@ -129,7 +150,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pelinggih Beji Taksu"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pelinggih Beji Taksu',
 			    })
 			}
@@ -137,7 +159,8 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pelinggih Apit Lawang"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pelinggih Apit Lawang',
 			    })
 			}
@@ -145,12 +168,19 @@ export default function PelinggihScreen ({ navigation }){
 		  <OptionButton
 		    image={Standar}
 		    label="Pura Jero Taksu"
-		    onPress={() => navigation.push('Details',{
+		    onPress={() => navigation.navigate('Details',{
+		    		content: <SejarahScreen/>,
 		    		name: 'Pura Jero Taksu',
 			    })
 			}
 		  />
 		</View>
+		)
+}
+
+export default function PelinggihScreen ({ navigation }){
+	return (
+      <PelinggihOption navigation = { navigation }/>
 	);
 }
 
